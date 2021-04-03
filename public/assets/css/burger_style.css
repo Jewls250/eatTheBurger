@@ -1,0 +1,14 @@
+.burgerShop{
+    background-image: url('/public/assets/img/spencer-davis-o_XkavUaGEw-unsplash.jpg');
+    min-height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 56px
+}
+
+#title{
+    text-align: center;
+    margin-top: 15px;
+}
