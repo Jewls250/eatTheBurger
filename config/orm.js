@@ -11,7 +11,7 @@ const orm = {
     });
   },
   insertOne(newValue, cb) {
-    const queryString = `INSERT INTO burgers (burger_name) VALUES ${newValue}`
+    const queryString = `INSERT INTO burgers (burger_name) VALUES ('${newValue}')`
     connection.query(queryString, (err, result) => {
       if (err) {
         throw err;

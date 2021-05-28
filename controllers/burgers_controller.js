@@ -15,12 +15,14 @@ router.get("/", (req, res) => {
 
 router.post("/api/burger", (req, res) => {
   console.log(req.body)
-  burger.create(["burger_name", "devoured"], [req.body.burger, 0], (result) => {
+  burger.create(req.body.burger, (result) => {
     // Send back the ID of the new quote
+    console.log(result)
     res.json({ id: result.insertId });
   });
 });
 
+// burger.create(["burger_name", "devoured"], [req.body.burger, 0]
 
 
 
